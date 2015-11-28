@@ -15,7 +15,8 @@ execute pathogen#infect()
 set encoding=utf-8
 syntax enable
 set background=dark
-colors Tomorrow-Night-Eighties
+"colors Tomorrow-Night-Eighties
+AirlineTheme papercolor
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
