@@ -16,15 +16,15 @@ set encoding=utf-8
 syntax enable
 set background=dark
 "colors Tomorrow-Night-Eighties
-AirlineTheme papercolor
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-set guifont=Sauce\ Code\ Powerline\ 8
+set guifont=tewi\ 8
 set laststatus=2
+:let g:airline_theme='papercolor'
 
 if v:progname =~? "evim"
   finish
@@ -136,3 +136,4 @@ nnoremap <Leader>p :tabe<CR>
 ino ;; <esc>
 cno ;; <c-c>
 vno ;; <esc>
+

@@ -1,5 +1,7 @@
 URxvt.scrollBar: false
-URxvt.font: xft:Sauce\ Code\ Powerline:size=10
+!URxvt.font: xft:Sauce\ Code\ Powerline:size=10
+URxvt.font: xft:tewi:size=10
+URxvt.letterSpace: 2
 
 ! special
 *.foreground:   #34302d
