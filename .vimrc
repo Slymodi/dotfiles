@@ -11,10 +11,23 @@
 
 " When started as "evim", evim.vim will already have done these settings.
 :set number
-execute pathogen#infect()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin	'VundleVim/Vundle.vim'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
+filetype plugin indent on
+
+"execute pathogen#infect()
 set encoding=utf-8
 syntax enable
-set background=dark
+set background=light
 "colors Tomorrow-Night-Eighties
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
@@ -127,7 +140,7 @@ nnoremap <Leader>l :tabn<CR>
 nnoremap <Leader>j G
 nnoremap <Leader>k gg
 
-nnoremap <Leader>w :wa<CR>a
+nnoremap <Leader>w :wa<CR>
 nnoremap <Leader>q :wqa<CR>
 
 nnoremap <Leader>s :tabp<CR>
