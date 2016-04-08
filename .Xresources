@@ -3,7 +3,7 @@ URxvt.scrollBar: false
 URxvt.font: xft:tewi:size=10
 
 URxvt.letterSpace: 2
-!!!!!!!!  YOUSAI THEME !!!!!!!!
+!!!! Yousai !!! !!!!!!!!
 !! special
 !*.foreground:   #34302d
 !*.background:   #f5e7de
@@ -42,7 +42,7 @@ URxvt.letterSpace: 2
 !*.color15:      #4c4742
 
 
-! special
+!!! Dawn !!!!!!!!!!!!!
 *.foreground:   #9b9081
 *.background:   #181b20
 *.cursorColor:  #9b9081
@@ -78,3 +78,40 @@ URxvt.letterSpace: 2
 ! white
 *.color7:       #b3b3b3
 *.color15:      #cdcdcd
+!!!! MONO !!!!!!!!!!!!!
+! special
+!*.foreground:   #ffffff
+!*.background:   #000000
+!*.cursorColor:  #ffffff
+!
+!! black
+!*.color0:       #000080
+!*.color8:       #090989
+!
+!! red
+!*.color1:       #111191
+!*.color9:       #181898
+!
+!! green
+!*.color2:       #2222a2
+!*.color10:      #2727a7
+!
+!! yellow
+!*.color3:       #3333b3
+!*.color11:      #3939b9
+!
+!! blue
+!*.color4:       #4444c4
+!*.color12:      #4848c8
+!
+!! magenta
+!*.color5:       #5555d5
+!*.color13:      #5959d9
+!
+!! cyan
+!*.color6:       #6666e6
+!*.color14:      #7070e0
+!
+!! white
+!*.color7:       #7777f7
+!*.color15:      #8181f1
