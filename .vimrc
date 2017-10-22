@@ -10,13 +10,18 @@
 "	    for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
+
+set directory^=$HOME/.vim/tmp//
+
 :set number
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin	'VundleVim/Vundle.vim'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
@@ -24,14 +29,23 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/tpope-vim-abolish'
+Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+
 
 "execute pathogen#infect()
 set encoding=utf-8
 syntax enable
 set background=light
+colors slate
 "colors Tomorrow-Night-Eighties
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
@@ -39,9 +53,13 @@ set background=light
 :set guioptions-=L  "remove left-hand scroll bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-set guifont=tewi\ 8
+set guifont=tewi\ 14
 set laststatus=2
 :let g:airline_theme='papercolor'
+
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,ColorScheme * :hi IndentGuidesOdd guibg=red ctermbg=1
@@ -143,6 +161,7 @@ map ; :
 "Leader Key mappings
 let mapleader="\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>i :NERDTree<CR>
 nnoremap <Leader>h :tabp<CR>
 nnoremap <Leader>l :tabn<CR>
 nnoremap <Leader>j G
@@ -153,6 +172,7 @@ nnoremap <Leader>q :wqa<CR>
 
 nnoremap <Leader>s :tabp<CR>
 nnoremap <Leader>p :tabe<CR>
+nnoremap <Leader>e <C-w>
 "Other Keymaps
 ino ;; <esc>
 cno ;; <c-c>
